@@ -8,17 +8,16 @@ Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _lodashLangIsUndefined = require('lodash/lang/isUndefined');
+var _lodashIsundefined = require('lodash.isundefined');
 
-var _lodashLangIsUndefined2 = _interopRequireDefault(_lodashLangIsUndefined);
+var _lodashIsundefined2 = _interopRequireDefault(_lodashIsundefined);
 
 /**
  * Recursive dispatch, returns a function which iterates a series of commands
  * looking for one to handle the target and return a value. The commands adhere
  * to an interface of (target, fn) where the returned dispatch fn is passed
  * along to each command, where it can be used by the command. If the target
- * cannot be handled by a command the command returns undefined. If none of the
- * supplied commands handle the target, an error is thrown.
+ * cannot be handled by a command the command returns undefined.
  *
  * @param commands
  * @returns {Function}
@@ -41,7 +40,7 @@ function dispatch() {
 
         result = command(target, fn);
 
-        if (!(0, _lodashLangIsUndefined2['default'])(result)) {
+        if (!(0, _lodashIsundefined2['default'])(result)) {
           break;
         }
       }
