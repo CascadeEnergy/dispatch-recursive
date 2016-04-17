@@ -8,6 +8,7 @@
     "email": "willieviseoae@gmail.com"
   },
   "license": "MIT",
+  "jsnext:main": "es6/index.js",
   "main": "es5/index.js",
   "engines": {
     "node": ">=0.10.0"
@@ -30,12 +31,13 @@
     "gulp-plumber": "^1.0.0",
     "isparta": "^3.0.3",
     "jshint-stylish": "^1.0.2",
+    "lodash": "^3.0.1",
     "mocha": "^2.2.4",
     "require-dir": "^0.3.0",
     "sinon": "^1.15.4"
   },
   "dependencies": {
     "babel-runtime": "^5.2.17",
-    "lodash": "^3.10.1"
+    "lodash.isundefined": "^3.0.1"
   }
 }
